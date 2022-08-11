@@ -24,56 +24,65 @@ var questionArray = [{
         correctAnswer: "Jefferson City",
     },
     {
-        question: "What is the capital of Missouri?",
-        options: ["Jefferson City", "Pierre", "Sacramento", "Austin"],
-        correctAnswer: "Jefferson City",
+        question: "What is the capital of Ohio?",
+        options: ["Jefferson City", "Columbus", "Carson City", "Boston"],
+        correctAnswer: "Columbus",
     },
     {
-        question: "What is the capital of Missouri?",
-        options: ["Jefferson City", "Pierre", "Sacramento", "Austin"],
-        correctAnswer: "Jefferson City",
+        question: "What is the capital of Alaska?",
+        options: ["Juneau", "Pierre", "Salem", "Bismarck"],
+        correctAnswer: "Juneau",
     },
     {
-        question: "What is the capital of Missouri?",
-        options: ["Jefferson City", "Pierre", "Sacramento", "Austin"],
-        correctAnswer: "Jefferson City",
+        question: "What is the capital of South Carolina?",
+        options: ["Charleston", "Denver", "Sacramento", "Madison"],
+        correctAnswer: "Charleston",
     },
     {
-        question: "What is the capital of Missouri?",
-        options: ["Jefferson City", "Pierre", "Sacramento", "Austin"],
-        correctAnswer: "Jefferson City",
+        question: "What is the capital of Michigan?",
+        options: ["Lansing", "Tallahassee", "Santa Fe", "Raleigh"],
+        correctAnswer: "Lansing",
+    },
+    {
+        question: "What is the capital of Florida?",
+        options: ["Lansing", "Tallahassee", "Santa Fe", "Raleigh"],
+        correctAnswer: "Tallahassee",
     }
 ]
 
-Hartford
-Pierre
-Austin
-Helena
-Providence
-Baton Rouge
-Honolulu
-Raleigh
-Bismarck
-Indianapolis
-Richmond
-Boise
-Jackson
-Sacramento
-Boston
-Jefferson City
-Saint Paul
-Carson City
-Juneau
-Salem
-Charleston
-Lansing
-Salt Lake City
-Cheyenne
-Lincoln
-Santa Fe
-Columbia
-Little Rock
-Springfield
-Columbus
-Madison
-Tallahassee
+
+var timeEl = document.querySelector(".time");
+var secondsLeft = 5;
+var startButton = document.querySelector("#startButton");
+var timerInterval;
+
+function setTime() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft;
+    if (secondsLeft === 0) {
+        console.log("Game Over")
+            //make game end
+
+    }
+}
+
+function startQuiz() {
+    //hide the start screen
+    //display the questoin screen
+    timerInterval = setInterval(setTime, 1000);
+    timeEl.textContent = secondsLeft;
+
+}
+
+
+
+
+
+
+
+
+
+startButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    startQuiz();
+})
