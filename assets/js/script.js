@@ -50,11 +50,17 @@ var questionArray = [{
     }
 ]
 
+var startScreen = document.querySelector("#startScreen");
+
 
 var timeEl = document.querySelector(".time");
 var secondsLeft = 5;
 var startButton = document.querySelector("#startButton");
 var timerInterval;
+var questionEl = document.querySelector("#question");
+var answerOptions = document.querySelector("#options");
+var questionScreen = document.querySelector("#questionScreen");
+
 
 function setTime() {
     secondsLeft--;
@@ -68,7 +74,9 @@ function setTime() {
 
 function startQuiz() {
     //hide the start screen
-    //display the questoin screen
+    startScreen.setAttribute("class", "hide");
+    //display the question screen
+    questionScreen.removeAttribute("class", "hide");
     timerInterval = setInterval(setTime, 1000);
     timeEl.textContent = secondsLeft;
 
