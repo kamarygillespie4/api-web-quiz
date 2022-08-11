@@ -1,0 +1,12 @@
+When the page loads, there will be a timer that has not yet started and a button that allows the user to start the quiz
+
+when the user presses this button, the first question will be displayed to the user
+
+when the user answers the question, the next question will be displayed
+if the user answers the question incorrectly, time will be subtracted from the timer
+during the quiz, the users score will be kept track of and displayed at the end, this score can be logged with their initials.
+
+
+
+
+
