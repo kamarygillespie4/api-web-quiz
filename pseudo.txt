@@ -1,10 +1,15 @@
-When the page loads, there will be a timer that has not yet started and a button that allows the user to start the quiz
+When the page loads, there will be a timer that has not yet started and a button that allows the user to start the quiz - This will be displayed on the start screen
 
-when the user presses this button, the first question will be displayed to the user
+when the user presses this button, the first question will be displayed to the user - the user pressing the button will hide the start button and move into the next screen div which will display the questions
 
 when the user answers the question, the next question will be displayed
 if the user answers the question incorrectly, time will be subtracted from the timer
+
+
+
 during the quiz, the users score will be kept track of and displayed at the end, this score can be logged with their initials.
+
+when the user finishes the questions, or the time runs out, the end screen will be displayed 
 
 
 

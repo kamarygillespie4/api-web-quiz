@@ -14,4 +14,4 @@
 
 
 ## Game Link
-	[USA capitals Quiz](https://www.example.com)
+	[USA capitals Quiz](https://kamarygillespie4.github.io/web-APIs-quiz/)

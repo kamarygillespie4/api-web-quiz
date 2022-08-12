@@ -171,5 +171,4 @@ function endQuiz() {
     var initials = prompt("Enter your initials to save your score");
     //sets text in userScore span to whatever value the score is 
     userScore.textContent = score;
-
 }
