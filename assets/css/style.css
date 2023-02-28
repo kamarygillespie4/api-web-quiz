@@ -1,7 +1,45 @@
+body {
+  background: #856f52;
+  color: #415c5a;
+}
+
 .hide {
-    display: none;
+  display: none;
+}
+
+.timer {
+  text-align: center;
+  font-weight: bold;
+
+  border-bottom: 8px double #856f52;
+}
+.time {
+  color: #337778;
+  font-weight: ;
+}
+.screens {
+  background: #dcc1ac;
+  height: 45vh;
+  width: 75%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 15vh;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 60px 60px #9caba6;
 }
 
 .optionButton {
-    color: green;
+  /* color: green; */
+  background: #9caba6;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#startButton {
+  background: #9caba6;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
 }
