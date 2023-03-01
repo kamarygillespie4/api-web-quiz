@@ -5,7 +5,7 @@
 ## Still need to figure out
 
 - Still working on how to create a scoreboard that holds the information from every game and is displayed to the user on the end screen
-- Have been focused on functionality but planning on styling the page too so it is visually appealing to the user.
+
 
 ## Game Images
 ![Start Screen](assets/images/startScreen.png)
